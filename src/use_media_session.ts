@@ -28,9 +28,6 @@ const useMediaSession = (props: MediaSessionProps) => {
       album,
       artwork,
     });
-    return () => {
-      mediaSession.metadata = null;
-    };
   }, [title, artist, album, artwork]);
 
   useEffect(() => {
